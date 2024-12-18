@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Dec 13 11:42:36 2024
+# Process ID: 24044
+# Current directory: C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent42340 C:\Users\dant0\Desktop\lab_7_2\lab6\lab6_1\lab6_1.xpr
+# Log file: C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/vivado.log
+# Journal file: C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1\vivado.jou
+# Running On: DESKTOP-3OBC3CP, OS: Windows, CPU Frequency: 3610 MHz, CPU Physical cores: 12, Host memory: 34120 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.xpr
+update_compile_order -fileset sources_1
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name dist_mem_gen_0
+set_property -dict [list \
+  CONFIG.coefficient_file {C:/Users/dant0/Desktop/font rom generator/score.coe} \
+  CONFIG.data_width {12} \
+  CONFIG.depth {4096} \
+  CONFIG.memory_type {rom} \
+] [get_ips dist_mem_gen_0]
+generate_target {instantiation_template} [get_files c:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci]
+generate_target all [get_files  c:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_0] }
+export_ip_user_files -of_objects [get_files c:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci]
+launch_runs dist_mem_gen_0_synth_1 -jobs 10
+wait_on_run dist_mem_gen_0_synth_1
+export_simulation -of_objects [get_files c:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci] -directory C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.ip_user_files -ipstatic_source_dir C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.cache/compile_simlib/modelsim} {questa=C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.cache/compile_simlib/questa} {riviera=C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.cache/compile_simlib/riviera} {activehdl=C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close [ open C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/new/score_controller.sv w ]
+add_files C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/new/score_controller.sv
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{c:/Users/dant0/Desktop/lab_7_2/font rom generator/sprite_data.coe}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/dant0/Desktop/lab_7_2/font rom generator/sprite_data.coe}}
+export_ip_user_files -of_objects  [get_files {{c:/Users/dant0/Desktop/lab_7_2/font rom generator/text.coe}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/dant0/Desktop/lab_7_2/font rom generator/text.coe}}
+export_ip_user_files -of_objects  [get_files {{c:/Users/dant0/Desktop/lab_7_2/font rom generator/title.coe}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/dant0/Desktop/lab_7_2/font rom generator/title.coe}}
+set_property CONFIG.coefficient_file {C:/Users/dant0/Desktop/font rom generator/title.coe} [get_ips title_rom]
+set_property CONFIG.coefficient_file {C:/Users/dant0/Desktop/font rom generator/text.coe} [get_ips text_rom]
+reset_run synth_1
+reset_run sprite_rom_synth_1
+reset_run title_rom_synth_1
+reset_run text_rom_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+export_ip_user_files -of_objects  [get_files c:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset dist_mem_gen_0 c:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name score_rom
+set_property -dict [list \
+  CONFIG.Component_Name {score_rom} \
+  CONFIG.coefficient_file {C:/Users/dant0/Desktop/font rom generator/score.coe} \
+  CONFIG.data_width {12} \
+  CONFIG.depth {4096} \
+  CONFIG.memory_type {rom} \
+] [get_ips score_rom]
+generate_target {instantiation_template} [get_files c:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/ip/score_rom/score_rom.xci]
+generate_target all [get_files  c:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/ip/score_rom/score_rom.xci]
+catch { config_ip_cache -export [get_ips -all score_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/ip/score_rom/score_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/ip/score_rom/score_rom.xci]
+export_simulation -of_objects [get_files c:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/ip/score_rom/score_rom.xci] -directory C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.ip_user_files -ipstatic_source_dir C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.cache/compile_simlib/modelsim} {questa=C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.cache/compile_simlib/questa} {riviera=C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.cache/compile_simlib/riviera} {activehdl=C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+set_property CONFIG.coefficient_file {C:/Users/dant0/Desktop/font rom generator/sprite_data.coe} [get_ips sprite_rom]
+generate_target all [get_files  C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/ip/sprite_rom_1/sprite_rom.xci]
+catch { config_ip_cache -export [get_ips -all sprite_rom] }
+catch { [ delete_ip_run [get_ips -all sprite_rom] ] }
+export_ip_user_files -of_objects [get_files C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/ip/sprite_rom_1/sprite_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/ip/sprite_rom_1/sprite_rom.xci]
+export_simulation -of_objects [get_files C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.srcs/sources_1/ip/sprite_rom_1/sprite_rom.xci] -directory C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.ip_user_files -ipstatic_source_dir C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.cache/compile_simlib/modelsim} {questa=C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.cache/compile_simlib/questa} {riviera=C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.cache/compile_simlib/riviera} {activehdl=C:/Users/dant0/Desktop/lab_7_2/lab6/lab6_1/lab6_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/mb_usb_hdmi_top.xsa

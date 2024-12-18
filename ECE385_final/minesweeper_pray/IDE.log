@@ -1,0 +1,2012 @@
+22:19:37 DEBUG : Logs will be stored at 'C:/Users/dant0/Desktop/minesweeper_pray/IDE.log'.
+22:19:39 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\dant0\Desktop\minesweeper_pray\temp_xsdb_launch_script.tcl
+22:19:39 INFO  : Platform repository initialization has completed.
+22:19:40 INFO  : Registering command handlers for Vitis TCF services
+22:19:40 INFO  : XSCT server has started successfully.
+22:19:40 INFO  : Successfully done setting XSCT server connection channel  
+22:19:40 INFO  : Successfully done query RDI_DATADIR 
+22:19:40 INFO  : Successfully done setting workspace for the tool. 
+22:19:41 INFO  : plnx-install-location is set to ''
+22:20:47 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+22:20:47 INFO  : Result from executing command 'getPlatforms': 
+22:20:47 WARN  : An unexpected exception occurred in the module 'platform project logging'
+22:20:47 INFO  : Platform 'mb_usb_hdmi_top' is added to custom repositories.
+22:20:48 INFO  : Platform 'mb_usb_hdmi_top' is added to custom repositories.
+22:22:19 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+22:22:19 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+22:22:19 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+22:22:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:22:28 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+22:22:28 INFO  : 'jtag frequency' command is executed.
+22:22:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+22:22:30 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+22:22:30 INFO  : Context for processor 'microblaze_0' is selected.
+22:22:30 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+22:22:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:22:30 INFO  : Context for processor 'microblaze_0' is selected.
+22:22:30 INFO  : System reset is completed.
+22:22:33 INFO  : 'after 3000' command is executed.
+22:22:33 INFO  : Context for processor 'microblaze_0' is selected.
+22:22:33 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+22:22:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+22:22:33 INFO  : Context for processor 'microblaze_0' is selected.
+22:22:33 INFO  : 'con' command is executed.
+22:22:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:22:33 INFO  : Disconnected from the channel tcfchan#2.
+23:31:36 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+23:31:44 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+23:31:44 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+23:31:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:31:50 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+23:31:50 INFO  : 'jtag frequency' command is executed.
+23:31:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:31:51 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+23:31:51 INFO  : Context for processor 'microblaze_0' is selected.
+23:31:51 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+23:31:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:31:51 INFO  : Context for processor 'microblaze_0' is selected.
+23:31:51 INFO  : System reset is completed.
+23:31:54 INFO  : 'after 3000' command is executed.
+23:31:54 INFO  : Context for processor 'microblaze_0' is selected.
+23:31:54 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+23:31:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+23:31:54 INFO  : Context for processor 'microblaze_0' is selected.
+23:31:54 INFO  : 'con' command is executed.
+23:31:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:31:54 INFO  : Disconnected from the channel tcfchan#4.
+23:32:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:32:13 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+23:32:13 INFO  : 'jtag frequency' command is executed.
+23:32:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:32:15 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+23:32:15 INFO  : Context for processor 'microblaze_0' is selected.
+23:32:15 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+23:32:15 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:32:15 INFO  : Context for processor 'microblaze_0' is selected.
+23:32:15 INFO  : System reset is completed.
+23:32:18 INFO  : 'after 3000' command is executed.
+23:32:18 INFO  : Context for processor 'microblaze_0' is selected.
+23:32:18 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+23:32:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+23:32:18 INFO  : Context for processor 'microblaze_0' is selected.
+23:32:18 INFO  : 'con' command is executed.
+23:32:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:32:18 INFO  : Disconnected from the channel tcfchan#5.
+23:34:53 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+23:34:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:34:59 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+23:34:59 INFO  : 'jtag frequency' command is executed.
+23:34:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:35:00 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+23:35:00 INFO  : Context for processor 'microblaze_0' is selected.
+23:35:00 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+23:35:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:35:00 INFO  : Context for processor 'microblaze_0' is selected.
+23:35:00 INFO  : System reset is completed.
+23:35:03 INFO  : 'after 3000' command is executed.
+23:35:03 INFO  : Context for processor 'microblaze_0' is selected.
+23:35:03 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+23:35:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+23:35:03 INFO  : Context for processor 'microblaze_0' is selected.
+23:35:03 INFO  : 'con' command is executed.
+23:35:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:35:03 INFO  : Disconnected from the channel tcfchan#6.
+23:49:04 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+23:49:12 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+23:49:12 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+23:49:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:49:21 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+23:49:21 INFO  : 'jtag frequency' command is executed.
+23:49:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:49:22 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+23:49:22 INFO  : Context for processor 'microblaze_0' is selected.
+23:49:22 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+23:49:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:49:22 INFO  : Context for processor 'microblaze_0' is selected.
+23:49:22 INFO  : System reset is completed.
+23:49:25 INFO  : 'after 3000' command is executed.
+23:49:25 INFO  : Context for processor 'microblaze_0' is selected.
+23:49:25 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+23:49:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+23:49:25 INFO  : Context for processor 'microblaze_0' is selected.
+23:49:25 INFO  : 'con' command is executed.
+23:49:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:49:25 INFO  : Disconnected from the channel tcfchan#8.
+00:18:59 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+00:19:07 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+00:19:07 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+00:19:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:19:09 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+00:19:09 INFO  : 'jtag frequency' command is executed.
+00:19:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+00:19:11 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+00:19:11 INFO  : Context for processor 'microblaze_0' is selected.
+00:19:11 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+00:19:11 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:19:11 INFO  : Context for processor 'microblaze_0' is selected.
+00:19:11 INFO  : System reset is completed.
+00:19:14 INFO  : 'after 3000' command is executed.
+00:19:14 INFO  : Context for processor 'microblaze_0' is selected.
+00:19:14 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+00:19:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+00:19:14 INFO  : Context for processor 'microblaze_0' is selected.
+00:19:14 INFO  : 'con' command is executed.
+00:19:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:19:14 INFO  : Disconnected from the channel tcfchan#10.
+00:33:47 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+00:33:53 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+00:33:53 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+00:33:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:33:58 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+00:33:58 INFO  : 'jtag frequency' command is executed.
+00:33:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+00:33:59 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+00:33:59 INFO  : Context for processor 'microblaze_0' is selected.
+00:33:59 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+00:33:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:33:59 INFO  : Context for processor 'microblaze_0' is selected.
+00:33:59 INFO  : System reset is completed.
+00:34:02 INFO  : 'after 3000' command is executed.
+00:34:02 INFO  : Context for processor 'microblaze_0' is selected.
+00:34:02 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+00:34:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+00:34:02 INFO  : Context for processor 'microblaze_0' is selected.
+00:34:02 INFO  : 'con' command is executed.
+00:34:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:34:02 INFO  : Disconnected from the channel tcfchan#12.
+01:08:47 DEBUG : Logs will be stored at 'C:/Users/dant0/Desktop/minesweeper_pray/IDE.log'.
+01:08:48 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\dant0\Desktop\minesweeper_pray\temp_xsdb_launch_script.tcl
+01:08:50 INFO  : Platform repository initialization has completed.
+01:08:50 INFO  : Registering command handlers for Vitis TCF services
+01:08:50 INFO  : XSCT server has started successfully.
+01:08:50 INFO  : plnx-install-location is set to ''
+01:08:50 INFO  : Successfully done setting XSCT server connection channel  
+01:08:50 INFO  : Successfully done query RDI_DATADIR 
+01:08:50 INFO  : Successfully done setting workspace for the tool. 
+01:08:58 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+01:09:05 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+01:09:05 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+01:09:05 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+01:09:07 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+01:09:07 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+01:09:07 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+01:09:07 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+01:09:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:09:21 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+01:09:21 INFO  : 'jtag frequency' command is executed.
+01:09:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+01:09:22 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+01:09:22 INFO  : Context for processor 'microblaze_0' is selected.
+01:09:22 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+01:09:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:09:22 INFO  : Context for processor 'microblaze_0' is selected.
+01:09:22 INFO  : System reset is completed.
+01:09:25 INFO  : 'after 3000' command is executed.
+01:09:25 INFO  : Context for processor 'microblaze_0' is selected.
+01:09:25 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+01:09:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+01:09:25 INFO  : Context for processor 'microblaze_0' is selected.
+01:09:25 INFO  : 'con' command is executed.
+01:09:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+01:09:25 INFO  : Disconnected from the channel tcfchan#2.
+01:13:38 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+01:13:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:13:44 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+01:13:44 INFO  : 'jtag frequency' command is executed.
+01:13:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+01:13:45 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+01:13:45 INFO  : Context for processor 'microblaze_0' is selected.
+01:13:45 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+01:13:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:13:45 INFO  : Context for processor 'microblaze_0' is selected.
+01:13:45 INFO  : System reset is completed.
+01:13:48 INFO  : 'after 3000' command is executed.
+01:13:48 INFO  : Context for processor 'microblaze_0' is selected.
+01:13:49 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+01:13:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+01:13:49 INFO  : Context for processor 'microblaze_0' is selected.
+01:13:49 INFO  : 'con' command is executed.
+01:13:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+01:13:49 INFO  : Disconnected from the channel tcfchan#3.
+01:22:45 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+01:22:54 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+01:22:54 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+01:22:54 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+01:22:56 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+01:22:56 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+01:22:56 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+01:22:56 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+01:23:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:23:04 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+01:23:04 INFO  : 'jtag frequency' command is executed.
+01:23:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+01:23:05 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+01:23:05 INFO  : Context for processor 'microblaze_0' is selected.
+01:23:05 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+01:23:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:23:05 INFO  : Context for processor 'microblaze_0' is selected.
+01:23:05 INFO  : System reset is completed.
+01:23:08 INFO  : 'after 3000' command is executed.
+01:23:08 INFO  : Context for processor 'microblaze_0' is selected.
+01:23:09 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+01:23:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+01:23:09 INFO  : Context for processor 'microblaze_0' is selected.
+01:23:09 INFO  : 'con' command is executed.
+01:23:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+01:23:09 INFO  : Disconnected from the channel tcfchan#5.
+01:35:15 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+01:35:23 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+01:35:24 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+01:35:24 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+01:35:25 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+01:35:25 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+01:35:25 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+01:35:25 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+01:35:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:35:30 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+01:35:30 INFO  : 'jtag frequency' command is executed.
+01:35:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+01:35:32 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+01:35:32 INFO  : Context for processor 'microblaze_0' is selected.
+01:35:32 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+01:35:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:35:32 INFO  : Context for processor 'microblaze_0' is selected.
+01:35:32 INFO  : System reset is completed.
+01:35:35 INFO  : 'after 3000' command is executed.
+01:35:35 INFO  : Context for processor 'microblaze_0' is selected.
+01:35:35 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+01:35:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+01:35:35 INFO  : Context for processor 'microblaze_0' is selected.
+01:35:35 INFO  : 'con' command is executed.
+01:35:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+01:35:35 INFO  : Disconnected from the channel tcfchan#7.
+01:51:34 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+01:51:41 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+01:51:41 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+01:51:42 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+01:51:43 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+01:51:43 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+01:51:43 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+01:51:43 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+01:51:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:51:59 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+01:51:59 INFO  : 'jtag frequency' command is executed.
+01:51:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+01:52:00 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+01:52:00 INFO  : Context for processor 'microblaze_0' is selected.
+01:52:00 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+01:52:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:52:00 INFO  : Context for processor 'microblaze_0' is selected.
+01:52:00 INFO  : System reset is completed.
+01:52:03 INFO  : 'after 3000' command is executed.
+01:52:03 INFO  : Context for processor 'microblaze_0' is selected.
+01:52:03 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+01:52:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+01:52:03 INFO  : Context for processor 'microblaze_0' is selected.
+01:52:03 INFO  : 'con' command is executed.
+01:52:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+01:52:03 INFO  : Disconnected from the channel tcfchan#9.
+03:02:16 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+03:02:25 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+03:02:25 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+03:02:25 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+03:02:27 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+03:02:27 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+03:02:27 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+03:02:27 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+03:02:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:02:32 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+03:02:32 INFO  : 'jtag frequency' command is executed.
+03:02:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+03:02:33 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+03:02:33 INFO  : Context for processor 'microblaze_0' is selected.
+03:02:33 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+03:02:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:02:33 INFO  : Context for processor 'microblaze_0' is selected.
+03:02:33 INFO  : System reset is completed.
+03:02:36 INFO  : 'after 3000' command is executed.
+03:02:36 INFO  : Context for processor 'microblaze_0' is selected.
+03:02:36 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+03:02:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+03:02:36 INFO  : Context for processor 'microblaze_0' is selected.
+03:02:36 INFO  : 'con' command is executed.
+03:02:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+03:02:36 INFO  : Disconnected from the channel tcfchan#11.
+22:17:23 DEBUG : Logs will be stored at 'C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/IDE.log'.
+22:17:23 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\dant0\Desktop\final_minesweeper_1\minesweeper_pray\temp_xsdb_launch_script.tcl
+22:17:25 INFO  : Platform repository initialization has completed.
+22:17:25 INFO  : Registering command handlers for Vitis TCF services
+22:17:26 INFO  : XSCT server has started successfully.
+22:17:26 INFO  : plnx-install-location is set to ''
+22:17:26 INFO  : Successfully done setting XSCT server connection channel  
+22:17:26 INFO  : Successfully done query RDI_DATADIR 
+22:17:26 INFO  : Successfully done setting workspace for the tool. 
+22:17:35 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+22:17:43 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+22:17:43 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+22:17:43 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+22:17:45 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+22:17:45 INFO  : The file 'C:\Users\dant0\Desktop\final_minesweeper_1\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+22:17:45 INFO  : The file 'C:\Users\dant0\Desktop\final_minesweeper_1\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+22:17:45 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\final_minesweeper_1\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+22:17:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:17:50 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+22:17:50 INFO  : 'jtag frequency' command is executed.
+22:17:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+22:17:51 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+22:17:51 INFO  : Context for processor 'microblaze_0' is selected.
+22:17:51 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+22:17:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:17:51 INFO  : Context for processor 'microblaze_0' is selected.
+22:17:51 INFO  : System reset is completed.
+22:17:54 INFO  : 'after 3000' command is executed.
+22:17:55 INFO  : Context for processor 'microblaze_0' is selected.
+22:17:55 INFO  : The application 'C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+22:17:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+22:17:55 INFO  : Context for processor 'microblaze_0' is selected.
+22:17:55 INFO  : 'con' command is executed.
+22:17:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:17:55 INFO  : Disconnected from the channel tcfchan#2.
+02:01:08 DEBUG : Logs will be stored at 'C:/Users/dant0/Desktop/1/minesweeper_pray/IDE.log'.
+02:01:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\dant0\Desktop\1\minesweeper_pray\temp_xsdb_launch_script.tcl
+02:01:11 INFO  : Platform repository initialization has completed.
+02:01:11 INFO  : XSCT server has started successfully.
+02:01:11 INFO  : plnx-install-location is set to ''
+02:01:11 INFO  : Successfully done setting XSCT server connection channel  
+02:01:11 INFO  : Successfully done query RDI_DATADIR 
+02:01:11 INFO  : Successfully done setting workspace for the tool. 
+02:01:11 INFO  : Registering command handlers for Vitis TCF services
+02:02:13 DEBUG : Logs will be stored at 'C:/Users/dant0/Desktop/1/minesweeper_pray/IDE.log'.
+02:02:13 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\dant0\Desktop\1\minesweeper_pray\temp_xsdb_launch_script.tcl
+02:02:15 INFO  : Platform repository initialization has completed.
+02:02:15 INFO  : XSCT server has started successfully.
+02:02:15 INFO  : Successfully done setting XSCT server connection channel  
+02:02:15 INFO  : plnx-install-location is set to ''
+02:02:15 INFO  : Successfully done setting workspace for the tool. 
+02:02:15 INFO  : Successfully done query RDI_DATADIR 
+02:02:15 INFO  : Registering command handlers for Vitis TCF services
+02:02:21 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+02:02:28 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+02:02:28 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+02:02:29 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+02:02:30 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+02:02:30 INFO  : The file 'C:\Users\dant0\Desktop\1\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+02:02:30 INFO  : The file 'C:\Users\dant0\Desktop\1\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+02:02:30 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\1\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+02:02:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:02:37 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+02:02:37 INFO  : 'jtag frequency' command is executed.
+02:02:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+02:02:38 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/1/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+02:02:38 INFO  : Context for processor 'microblaze_0' is selected.
+02:02:38 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+02:02:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+02:02:38 INFO  : Context for processor 'microblaze_0' is selected.
+02:02:38 INFO  : System reset is completed.
+02:02:41 INFO  : 'after 3000' command is executed.
+02:02:41 INFO  : Context for processor 'microblaze_0' is selected.
+02:02:41 INFO  : The application 'C:/Users/dant0/Desktop/1/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+02:02:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/1/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/1/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+02:02:41 INFO  : Context for processor 'microblaze_0' is selected.
+02:02:41 INFO  : 'con' command is executed.
+02:02:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+02:02:41 INFO  : Disconnected from the channel tcfchan#2.
+02:10:30 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+02:10:38 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+02:10:38 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+02:10:38 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+02:10:39 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+02:10:39 INFO  : The file 'C:\Users\dant0\Desktop\1\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+02:10:39 INFO  : The file 'C:\Users\dant0\Desktop\1\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+02:10:39 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\1\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+02:11:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:11:10 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+02:11:10 INFO  : 'jtag frequency' command is executed.
+02:11:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+02:11:11 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/1/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+02:11:11 INFO  : Context for processor 'microblaze_0' is selected.
+02:11:11 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+02:11:11 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+02:11:11 INFO  : Context for processor 'microblaze_0' is selected.
+02:11:11 INFO  : System reset is completed.
+02:11:14 INFO  : 'after 3000' command is executed.
+02:11:14 INFO  : Context for processor 'microblaze_0' is selected.
+02:11:14 INFO  : The application 'C:/Users/dant0/Desktop/1/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+02:11:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/1/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/1/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+02:11:14 INFO  : Context for processor 'microblaze_0' is selected.
+02:11:14 INFO  : 'con' command is executed.
+02:11:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+02:11:14 INFO  : Disconnected from the channel tcfchan#4.
+02:18:42 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+02:18:48 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+02:18:48 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+02:18:49 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+02:18:50 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+02:18:50 INFO  : The file 'C:\Users\dant0\Desktop\1\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+02:18:50 INFO  : The file 'C:\Users\dant0\Desktop\1\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+02:18:50 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\1\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+02:19:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:19:06 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+02:19:06 INFO  : 'jtag frequency' command is executed.
+02:19:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+02:19:07 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/1/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+02:19:07 INFO  : Context for processor 'microblaze_0' is selected.
+02:19:07 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+02:19:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+02:19:07 INFO  : Context for processor 'microblaze_0' is selected.
+02:19:07 INFO  : System reset is completed.
+02:19:10 INFO  : 'after 3000' command is executed.
+02:19:10 INFO  : Context for processor 'microblaze_0' is selected.
+02:19:10 INFO  : The application 'C:/Users/dant0/Desktop/1/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+02:19:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/1/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/1/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+02:19:10 INFO  : Context for processor 'microblaze_0' is selected.
+02:19:10 INFO  : 'con' command is executed.
+02:19:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+02:19:10 INFO  : Disconnected from the channel tcfchan#6.
+02:28:06 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+02:28:31 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+02:28:31 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+02:28:31 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+02:28:33 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+02:28:33 INFO  : The file 'C:\Users\dant0\Desktop\1\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+02:28:33 INFO  : The file 'C:\Users\dant0\Desktop\1\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+02:28:33 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\1\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+02:28:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:28:41 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+02:28:41 INFO  : 'jtag frequency' command is executed.
+02:28:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+02:28:42 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/1/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+02:28:42 INFO  : Context for processor 'microblaze_0' is selected.
+02:28:42 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+02:28:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+02:28:42 INFO  : Context for processor 'microblaze_0' is selected.
+02:28:42 INFO  : System reset is completed.
+02:28:45 INFO  : 'after 3000' command is executed.
+02:28:45 INFO  : Context for processor 'microblaze_0' is selected.
+02:28:45 INFO  : The application 'C:/Users/dant0/Desktop/1/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+02:28:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/1/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/1/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+02:28:45 INFO  : Context for processor 'microblaze_0' is selected.
+02:28:45 INFO  : 'con' command is executed.
+02:28:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+02:28:45 INFO  : Disconnected from the channel tcfchan#8.
+02:54:20 DEBUG : Logs will be stored at 'C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/IDE.log'.
+02:54:21 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\dant0\Desktop\final_minesweeper_1\minesweeper_pray\temp_xsdb_launch_script.tcl
+02:54:23 INFO  : Platform repository initialization has completed.
+02:54:23 INFO  : XSCT server has started successfully.
+02:54:23 INFO  : Successfully done setting XSCT server connection channel  
+02:54:23 INFO  : plnx-install-location is set to ''
+02:54:23 INFO  : Successfully done query RDI_DATADIR 
+02:54:23 INFO  : Successfully done setting workspace for the tool. 
+02:54:23 INFO  : Registering command handlers for Vitis TCF services
+02:54:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:54:26 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+02:54:26 INFO  : 'jtag frequency' command is executed.
+02:54:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+02:54:28 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+02:54:28 INFO  : Context for processor 'microblaze_0' is selected.
+02:54:28 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+02:54:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+02:54:28 INFO  : Context for processor 'microblaze_0' is selected.
+02:54:28 INFO  : System reset is completed.
+02:54:31 INFO  : 'after 3000' command is executed.
+02:54:31 INFO  : Context for processor 'microblaze_0' is selected.
+02:54:31 INFO  : The application 'C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+02:54:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+02:54:31 INFO  : Context for processor 'microblaze_0' is selected.
+02:54:31 INFO  : 'con' command is executed.
+02:54:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+02:54:31 INFO  : Disconnected from the channel tcfchan#1.
+03:59:48 DEBUG : Logs will be stored at 'C:/Users/dant0/Desktop/minesweeper_pray/IDE.log'.
+03:59:49 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\dant0\Desktop\minesweeper_pray\temp_xsdb_launch_script.tcl
+03:59:51 INFO  : XSCT server has started successfully.
+03:59:51 INFO  : Platform repository initialization has completed.
+03:59:51 INFO  : Successfully done setting XSCT server connection channel  
+03:59:51 INFO  : plnx-install-location is set to ''
+03:59:51 INFO  : Successfully done query RDI_DATADIR 
+03:59:51 INFO  : Successfully done setting workspace for the tool. 
+03:59:51 INFO  : Registering command handlers for Vitis TCF services
+04:00:00 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+04:00:06 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+04:00:06 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+04:00:06 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+04:00:08 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+04:00:08 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+04:00:08 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+04:00:08 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+04:00:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:00:13 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+04:00:13 INFO  : 'jtag frequency' command is executed.
+04:00:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+04:00:14 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+04:00:14 INFO  : Context for processor 'microblaze_0' is selected.
+04:00:14 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+04:00:14 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:00:14 INFO  : Context for processor 'microblaze_0' is selected.
+04:00:14 INFO  : System reset is completed.
+04:00:17 INFO  : 'after 3000' command is executed.
+04:00:17 INFO  : Context for processor 'microblaze_0' is selected.
+04:00:18 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+04:00:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+04:00:18 INFO  : Context for processor 'microblaze_0' is selected.
+04:00:18 INFO  : 'con' command is executed.
+04:00:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:00:18 INFO  : Disconnected from the channel tcfchan#2.
+04:02:03 DEBUG : Logs will be stored at 'C:/Users/dant0/Desktop/minesweeper_pray/IDE.log'.
+04:02:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\dant0\Desktop\minesweeper_pray\temp_xsdb_launch_script.tcl
+04:02:05 INFO  : Platform repository initialization has completed.
+04:02:05 INFO  : XSCT server has started successfully.
+04:02:05 INFO  : Successfully done setting XSCT server connection channel  
+04:02:05 INFO  : plnx-install-location is set to ''
+04:02:05 INFO  : Successfully done query RDI_DATADIR 
+04:02:05 INFO  : Successfully done setting workspace for the tool. 
+04:02:05 INFO  : Registering command handlers for Vitis TCF services
+04:02:09 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+04:02:15 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+04:02:15 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+04:02:15 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+04:02:17 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+04:02:17 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+04:02:17 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+04:02:17 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+04:02:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:02:21 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+04:02:21 INFO  : 'jtag frequency' command is executed.
+04:02:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+04:02:22 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+04:02:22 INFO  : Context for processor 'microblaze_0' is selected.
+04:02:22 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+04:02:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:02:22 INFO  : Context for processor 'microblaze_0' is selected.
+04:02:22 INFO  : System reset is completed.
+04:02:25 INFO  : 'after 3000' command is executed.
+04:02:25 INFO  : Context for processor 'microblaze_0' is selected.
+04:02:26 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+04:02:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+04:02:26 INFO  : Context for processor 'microblaze_0' is selected.
+04:02:26 INFO  : 'con' command is executed.
+04:02:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:02:26 INFO  : Disconnected from the channel tcfchan#2.
+04:38:01 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+04:38:10 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+04:38:10 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+04:38:10 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+04:38:12 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+04:38:12 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+04:38:12 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+04:38:12 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+04:38:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:38:17 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+04:38:17 INFO  : 'jtag frequency' command is executed.
+04:38:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+04:38:18 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+04:38:18 INFO  : Context for processor 'microblaze_0' is selected.
+04:38:18 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+04:38:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:38:19 INFO  : Context for processor 'microblaze_0' is selected.
+04:38:19 INFO  : System reset is completed.
+04:38:22 INFO  : 'after 3000' command is executed.
+04:38:22 INFO  : Context for processor 'microblaze_0' is selected.
+04:38:22 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+04:38:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+04:38:22 INFO  : Context for processor 'microblaze_0' is selected.
+04:38:22 INFO  : 'con' command is executed.
+04:38:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:38:22 INFO  : Disconnected from the channel tcfchan#4.
+04:49:22 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+04:49:31 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+04:49:31 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+04:49:32 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+04:49:33 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+04:49:33 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+04:49:33 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+04:49:33 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+04:49:45 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+04:49:52 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+04:49:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:49:58 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+04:49:58 INFO  : 'jtag frequency' command is executed.
+04:49:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+04:49:59 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+04:49:59 INFO  : Context for processor 'microblaze_0' is selected.
+04:49:59 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+04:50:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:50:00 INFO  : Context for processor 'microblaze_0' is selected.
+04:50:00 INFO  : System reset is completed.
+04:50:03 INFO  : 'after 3000' command is executed.
+04:50:03 INFO  : Context for processor 'microblaze_0' is selected.
+04:50:03 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+04:50:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+04:50:03 INFO  : Context for processor 'microblaze_0' is selected.
+04:50:03 INFO  : 'con' command is executed.
+04:50:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:50:03 INFO  : Disconnected from the channel tcfchan#6.
+05:08:04 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+05:08:11 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+05:08:11 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+05:08:11 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+05:08:13 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+05:08:13 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+05:08:13 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+05:08:13 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+05:08:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:08:17 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+05:08:17 INFO  : 'jtag frequency' command is executed.
+05:08:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+05:08:19 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+05:08:19 INFO  : Context for processor 'microblaze_0' is selected.
+05:08:19 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+05:08:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+05:08:19 INFO  : Context for processor 'microblaze_0' is selected.
+05:08:19 INFO  : System reset is completed.
+05:08:22 INFO  : 'after 3000' command is executed.
+05:08:22 INFO  : Context for processor 'microblaze_0' is selected.
+05:08:22 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+05:08:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+05:08:22 INFO  : Context for processor 'microblaze_0' is selected.
+05:08:22 INFO  : 'con' command is executed.
+05:08:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+05:08:22 INFO  : Disconnected from the channel tcfchan#8.
+05:09:59 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+05:10:08 INFO  : Result from executing command 'removePlatformRepo': 
+05:10:14 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+05:10:15 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+05:10:15 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+05:10:17 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+05:10:17 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+05:10:17 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+05:10:17 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+05:10:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:10:22 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+05:10:22 INFO  : 'jtag frequency' command is executed.
+05:10:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+05:10:23 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+05:10:23 INFO  : Context for processor 'microblaze_0' is selected.
+05:10:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+05:10:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+05:10:23 INFO  : Context for processor 'microblaze_0' is selected.
+05:10:23 INFO  : System reset is completed.
+05:10:26 INFO  : 'after 3000' command is executed.
+05:10:26 INFO  : Context for processor 'microblaze_0' is selected.
+05:10:27 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+05:10:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+05:10:27 INFO  : Context for processor 'microblaze_0' is selected.
+05:10:27 INFO  : 'con' command is executed.
+05:10:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+05:10:27 INFO  : Disconnected from the channel tcfchan#11.
+05:24:05 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+05:24:12 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+05:24:12 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+05:24:12 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+05:24:14 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+05:24:14 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+05:24:14 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+05:24:14 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+05:24:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:24:18 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+05:24:18 INFO  : 'jtag frequency' command is executed.
+05:24:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+05:24:19 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+05:24:19 INFO  : Context for processor 'microblaze_0' is selected.
+05:24:19 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+05:24:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+05:24:19 INFO  : Context for processor 'microblaze_0' is selected.
+05:24:19 INFO  : System reset is completed.
+05:24:22 INFO  : 'after 3000' command is executed.
+05:24:22 INFO  : Context for processor 'microblaze_0' is selected.
+05:24:22 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+05:24:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+05:24:22 INFO  : Context for processor 'microblaze_0' is selected.
+05:24:22 INFO  : 'con' command is executed.
+05:24:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+05:24:22 INFO  : Disconnected from the channel tcfchan#13.
+05:37:13 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+05:37:21 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+05:37:21 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+05:37:21 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+05:37:23 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+05:37:23 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+05:37:23 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+05:37:23 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+05:37:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:37:28 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+05:37:28 INFO  : 'jtag frequency' command is executed.
+05:37:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+05:37:30 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+05:37:30 INFO  : Context for processor 'microblaze_0' is selected.
+05:37:30 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+05:37:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+05:37:30 INFO  : Context for processor 'microblaze_0' is selected.
+05:37:30 INFO  : System reset is completed.
+05:37:33 INFO  : 'after 3000' command is executed.
+05:37:33 INFO  : Context for processor 'microblaze_0' is selected.
+05:37:33 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+05:37:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+05:37:33 INFO  : Context for processor 'microblaze_0' is selected.
+05:37:33 INFO  : 'con' command is executed.
+05:37:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+05:37:33 INFO  : Disconnected from the channel tcfchan#15.
+05:53:24 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+05:53:31 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+05:53:31 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+05:53:31 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+05:53:33 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+05:53:33 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+05:53:33 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+05:53:33 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+05:53:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:53:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+05:53:46 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+05:53:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:53:51 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+05:53:51 INFO  : 'jtag frequency' command is executed.
+05:53:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+05:53:52 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+05:53:52 INFO  : Context for processor 'microblaze_0' is selected.
+05:53:52 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+05:53:52 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+05:53:52 INFO  : Context for processor 'microblaze_0' is selected.
+05:53:52 INFO  : System reset is completed.
+05:53:55 INFO  : 'after 3000' command is executed.
+05:53:56 INFO  : Context for processor 'microblaze_0' is selected.
+05:53:56 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+05:53:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+05:53:56 INFO  : Context for processor 'microblaze_0' is selected.
+05:53:56 INFO  : 'con' command is executed.
+05:53:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+05:53:56 INFO  : Disconnected from the channel tcfchan#17.
+06:01:12 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+06:01:20 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+06:01:20 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+06:01:20 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+06:01:22 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+06:01:22 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+06:01:22 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+06:01:22 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+06:01:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:01:26 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+06:01:26 INFO  : 'jtag frequency' command is executed.
+06:01:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+06:01:27 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+06:01:27 INFO  : Context for processor 'microblaze_0' is selected.
+06:01:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+06:01:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+06:01:27 INFO  : Context for processor 'microblaze_0' is selected.
+06:01:27 INFO  : System reset is completed.
+06:01:30 INFO  : 'after 3000' command is executed.
+06:01:31 INFO  : Context for processor 'microblaze_0' is selected.
+06:01:31 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+06:01:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+06:01:31 INFO  : Context for processor 'microblaze_0' is selected.
+06:01:31 INFO  : 'con' command is executed.
+06:01:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+06:01:31 INFO  : Disconnected from the channel tcfchan#19.
+06:15:43 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+06:15:51 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+06:15:51 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+06:15:51 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+06:15:53 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+06:15:53 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+06:15:53 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+06:15:53 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+06:15:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:15:59 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+06:15:59 INFO  : 'jtag frequency' command is executed.
+06:15:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+06:16:00 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+06:16:00 INFO  : Context for processor 'microblaze_0' is selected.
+06:16:00 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+06:16:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+06:16:00 INFO  : Context for processor 'microblaze_0' is selected.
+06:16:00 INFO  : System reset is completed.
+06:16:03 INFO  : 'after 3000' command is executed.
+06:16:03 INFO  : Context for processor 'microblaze_0' is selected.
+06:16:03 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+06:16:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+06:16:03 INFO  : Context for processor 'microblaze_0' is selected.
+06:16:03 INFO  : 'con' command is executed.
+06:16:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+06:16:03 INFO  : Disconnected from the channel tcfchan#21.
+06:28:25 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+06:28:33 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+06:28:33 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+06:28:33 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+06:28:35 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+06:28:35 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+06:28:35 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+06:28:35 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+06:28:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:28:39 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+06:28:39 INFO  : 'jtag frequency' command is executed.
+06:28:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+06:28:40 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+06:28:40 INFO  : Context for processor 'microblaze_0' is selected.
+06:28:40 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+06:28:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+06:28:40 INFO  : Context for processor 'microblaze_0' is selected.
+06:28:40 INFO  : System reset is completed.
+06:28:43 INFO  : 'after 3000' command is executed.
+06:28:43 INFO  : Context for processor 'microblaze_0' is selected.
+06:28:44 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+06:28:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+06:28:44 INFO  : Context for processor 'microblaze_0' is selected.
+06:28:44 INFO  : 'con' command is executed.
+06:28:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+06:28:44 INFO  : Disconnected from the channel tcfchan#23.
+06:41:26 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+06:41:42 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+06:41:42 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+06:41:43 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+06:41:44 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+06:41:44 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+06:41:44 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+06:41:44 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+06:41:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:41:50 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+06:41:50 INFO  : 'jtag frequency' command is executed.
+06:41:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+06:41:51 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+06:41:51 INFO  : Context for processor 'microblaze_0' is selected.
+06:41:51 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+06:41:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+06:41:51 INFO  : Context for processor 'microblaze_0' is selected.
+06:41:51 INFO  : System reset is completed.
+06:41:54 INFO  : 'after 3000' command is executed.
+06:41:54 INFO  : Context for processor 'microblaze_0' is selected.
+06:41:54 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+06:41:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+06:41:54 INFO  : Context for processor 'microblaze_0' is selected.
+06:41:54 INFO  : 'con' command is executed.
+06:41:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+06:41:54 INFO  : Disconnected from the channel tcfchan#25.
+06:51:28 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+06:51:37 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+06:51:37 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+06:51:37 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+06:51:38 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+06:51:38 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+06:51:38 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+06:51:38 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+06:51:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:51:42 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+06:51:42 INFO  : 'jtag frequency' command is executed.
+06:51:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+06:51:44 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+06:51:44 INFO  : Context for processor 'microblaze_0' is selected.
+06:51:44 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+06:51:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+06:51:44 INFO  : Context for processor 'microblaze_0' is selected.
+06:51:44 INFO  : System reset is completed.
+06:51:47 INFO  : 'after 3000' command is executed.
+06:51:47 INFO  : Context for processor 'microblaze_0' is selected.
+06:51:47 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+06:51:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+06:51:47 INFO  : Context for processor 'microblaze_0' is selected.
+06:51:47 INFO  : 'con' command is executed.
+06:51:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+06:51:47 INFO  : Disconnected from the channel tcfchan#27.
+06:59:44 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+06:59:50 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+06:59:50 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+06:59:51 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+06:59:52 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+06:59:52 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+06:59:52 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+06:59:52 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+06:59:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:59:56 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+06:59:56 INFO  : 'jtag frequency' command is executed.
+06:59:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+06:59:58 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+06:59:58 INFO  : Context for processor 'microblaze_0' is selected.
+06:59:58 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+06:59:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+06:59:58 INFO  : Context for processor 'microblaze_0' is selected.
+06:59:58 INFO  : System reset is completed.
+07:00:01 INFO  : 'after 3000' command is executed.
+07:00:01 INFO  : Context for processor 'microblaze_0' is selected.
+07:00:01 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+07:00:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+07:00:01 INFO  : Context for processor 'microblaze_0' is selected.
+07:00:01 INFO  : 'con' command is executed.
+07:00:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+07:00:01 INFO  : Disconnected from the channel tcfchan#29.
+07:21:37 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+07:21:46 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+07:21:46 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+07:21:46 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+07:21:48 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+07:21:48 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+07:21:48 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+07:21:48 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+07:21:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:21:52 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+07:21:52 INFO  : 'jtag frequency' command is executed.
+07:21:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+07:21:54 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+07:21:54 INFO  : Context for processor 'microblaze_0' is selected.
+07:21:54 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+07:21:54 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+07:21:54 INFO  : Context for processor 'microblaze_0' is selected.
+07:21:54 INFO  : System reset is completed.
+07:21:57 INFO  : 'after 3000' command is executed.
+07:21:57 INFO  : Context for processor 'microblaze_0' is selected.
+07:21:57 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+07:21:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+07:21:57 INFO  : Context for processor 'microblaze_0' is selected.
+07:21:57 INFO  : 'con' command is executed.
+07:21:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+07:21:57 INFO  : Disconnected from the channel tcfchan#31.
+07:33:01 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+07:33:11 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+07:33:11 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+07:33:11 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+07:33:12 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+07:33:12 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+07:33:12 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+07:33:13 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+07:33:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:33:20 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+07:33:20 INFO  : 'jtag frequency' command is executed.
+07:33:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+07:33:21 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+07:33:21 INFO  : Context for processor 'microblaze_0' is selected.
+07:33:21 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+07:33:21 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+07:33:21 INFO  : Context for processor 'microblaze_0' is selected.
+07:33:21 INFO  : System reset is completed.
+07:33:24 INFO  : 'after 3000' command is executed.
+07:33:24 INFO  : Context for processor 'microblaze_0' is selected.
+07:33:24 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+07:33:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+07:33:24 INFO  : Context for processor 'microblaze_0' is selected.
+07:33:24 INFO  : 'con' command is executed.
+07:33:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+07:33:24 INFO  : Disconnected from the channel tcfchan#33.
+07:59:53 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+08:00:00 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+08:00:00 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+08:00:00 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+08:00:02 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+08:00:02 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+08:00:02 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+08:00:02 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+08:00:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:00:07 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+08:00:07 INFO  : 'jtag frequency' command is executed.
+08:00:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+08:00:08 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+08:00:08 INFO  : Context for processor 'microblaze_0' is selected.
+08:00:08 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+08:00:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+08:00:08 INFO  : Context for processor 'microblaze_0' is selected.
+08:00:08 INFO  : System reset is completed.
+08:00:11 INFO  : 'after 3000' command is executed.
+08:00:11 INFO  : Context for processor 'microblaze_0' is selected.
+08:00:11 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+08:00:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+08:00:11 INFO  : Context for processor 'microblaze_0' is selected.
+08:00:11 INFO  : 'con' command is executed.
+08:00:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+08:00:11 INFO  : Disconnected from the channel tcfchan#35.
+08:12:11 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+08:12:22 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+08:12:22 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+08:12:22 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+08:12:23 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+08:12:23 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+08:12:23 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+08:12:23 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+08:12:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:12:29 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+08:12:29 INFO  : 'jtag frequency' command is executed.
+08:12:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+08:12:31 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+08:12:31 INFO  : Context for processor 'microblaze_0' is selected.
+08:12:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+08:12:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+08:12:31 INFO  : Context for processor 'microblaze_0' is selected.
+08:12:31 INFO  : System reset is completed.
+08:12:34 INFO  : 'after 3000' command is executed.
+08:12:34 INFO  : Context for processor 'microblaze_0' is selected.
+08:12:34 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+08:12:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+08:12:34 INFO  : Context for processor 'microblaze_0' is selected.
+08:12:34 INFO  : 'con' command is executed.
+08:12:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+08:12:34 INFO  : Disconnected from the channel tcfchan#37.
+08:24:03 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+08:24:10 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+08:24:10 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+08:24:10 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+08:24:12 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+08:24:12 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+08:24:12 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+08:24:12 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+08:24:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:24:18 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+08:24:18 INFO  : 'jtag frequency' command is executed.
+08:24:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+08:24:19 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+08:24:19 INFO  : Context for processor 'microblaze_0' is selected.
+08:24:20 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+08:24:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+08:24:20 INFO  : Context for processor 'microblaze_0' is selected.
+08:24:20 INFO  : System reset is completed.
+08:24:23 INFO  : 'after 3000' command is executed.
+08:24:23 INFO  : Context for processor 'microblaze_0' is selected.
+08:24:23 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+08:24:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+08:24:23 INFO  : Context for processor 'microblaze_0' is selected.
+08:24:23 INFO  : 'con' command is executed.
+08:24:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+08:24:23 INFO  : Disconnected from the channel tcfchan#39.
+08:36:24 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+08:36:31 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+08:36:31 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+08:36:31 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+08:36:32 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+08:36:32 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+08:36:32 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+08:36:32 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+08:36:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:36:37 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+08:36:37 INFO  : 'jtag frequency' command is executed.
+08:36:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+08:36:38 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+08:36:38 INFO  : Context for processor 'microblaze_0' is selected.
+08:36:38 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+08:36:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+08:36:38 INFO  : Context for processor 'microblaze_0' is selected.
+08:36:38 INFO  : System reset is completed.
+08:36:41 INFO  : 'after 3000' command is executed.
+08:36:42 INFO  : Context for processor 'microblaze_0' is selected.
+08:36:42 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+08:36:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+08:36:42 INFO  : Context for processor 'microblaze_0' is selected.
+08:36:42 INFO  : 'con' command is executed.
+08:36:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+08:36:42 INFO  : Disconnected from the channel tcfchan#41.
+08:49:11 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+08:49:19 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+08:49:19 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+08:49:19 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+08:49:21 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+08:49:21 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+08:49:21 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+08:49:21 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+08:49:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:49:26 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+08:49:26 INFO  : 'jtag frequency' command is executed.
+08:49:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+08:49:27 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+08:49:27 INFO  : Context for processor 'microblaze_0' is selected.
+08:49:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+08:49:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+08:49:27 INFO  : Context for processor 'microblaze_0' is selected.
+08:49:27 INFO  : System reset is completed.
+08:49:30 INFO  : 'after 3000' command is executed.
+08:49:30 INFO  : Context for processor 'microblaze_0' is selected.
+08:49:31 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+08:49:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+08:49:31 INFO  : Context for processor 'microblaze_0' is selected.
+08:49:31 INFO  : 'con' command is executed.
+08:49:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+08:49:31 INFO  : Disconnected from the channel tcfchan#43.
+08:58:00 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+08:58:07 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+08:58:07 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+08:58:07 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+08:58:09 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+08:58:09 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+08:58:09 INFO  : The file 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+08:58:09 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+08:58:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:58:13 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+08:58:13 INFO  : 'jtag frequency' command is executed.
+08:58:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+08:58:14 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+08:58:14 INFO  : Context for processor 'microblaze_0' is selected.
+08:58:14 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+08:58:14 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+08:58:14 INFO  : Context for processor 'microblaze_0' is selected.
+08:58:14 INFO  : System reset is completed.
+08:58:17 INFO  : 'after 3000' command is executed.
+08:58:17 INFO  : Context for processor 'microblaze_0' is selected.
+08:58:18 INFO  : The application 'C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+08:58:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+08:58:18 INFO  : Context for processor 'microblaze_0' is selected.
+08:58:18 INFO  : 'con' command is executed.
+08:58:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+08:58:18 INFO  : Disconnected from the channel tcfchan#45.
+11:55:07 DEBUG : Logs will be stored at 'C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/IDE.log'.
+11:55:08 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\dant0\Desktop\lab_7_2\minesweeper_pray\temp_xsdb_launch_script.tcl
+11:55:10 INFO  : XSCT server has started successfully.
+11:55:10 INFO  : plnx-install-location is set to ''
+11:55:10 INFO  : Successfully done setting XSCT server connection channel  
+11:55:10 INFO  : Successfully done setting workspace for the tool. 
+11:55:10 INFO  : Platform repository initialization has completed.
+11:55:10 INFO  : Successfully done query RDI_DATADIR 
+11:55:11 INFO  : Registering command handlers for Vitis TCF services
+11:55:17 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+11:55:24 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+11:55:24 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+11:55:24 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+11:55:26 INFO  : The hardware specification used by project 'MinesweeperPRAY' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+11:55:26 INFO  : The file 'C:\Users\dant0\Desktop\lab_7_2\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+11:55:26 INFO  : The file 'C:\Users\dant0\Desktop\lab_7_2\minesweeper_pray\MinesweeperPRAY\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+11:55:26 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\dant0\Desktop\lab_7_2\minesweeper_pray\MinesweeperPRAY\_ide\bitstream' in project 'MinesweeperPRAY'.
+11:55:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:55:30 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+11:55:30 INFO  : 'jtag frequency' command is executed.
+11:55:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+11:55:32 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+11:55:32 INFO  : Context for processor 'microblaze_0' is selected.
+11:55:32 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+11:55:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:55:32 INFO  : Context for processor 'microblaze_0' is selected.
+11:55:32 INFO  : System reset is completed.
+11:55:35 INFO  : 'after 3000' command is executed.
+11:55:35 INFO  : Context for processor 'microblaze_0' is selected.
+11:55:35 INFO  : The application 'C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+11:55:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+11:55:35 INFO  : Context for processor 'microblaze_0' is selected.
+11:55:35 INFO  : 'con' command is executed.
+11:55:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:55:35 INFO  : Disconnected from the channel tcfchan#2.
+12:04:20 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+12:04:28 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+12:04:28 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+12:04:28 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+12:04:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:04:33 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+12:04:33 INFO  : 'jtag frequency' command is executed.
+12:04:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+12:04:34 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+12:04:35 INFO  : Context for processor 'microblaze_0' is selected.
+12:04:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+12:04:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:04:35 INFO  : Context for processor 'microblaze_0' is selected.
+12:04:35 INFO  : System reset is completed.
+12:04:38 INFO  : 'after 3000' command is executed.
+12:04:38 INFO  : Context for processor 'microblaze_0' is selected.
+12:04:38 INFO  : The application 'C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+12:04:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+12:04:38 INFO  : Context for processor 'microblaze_0' is selected.
+12:04:38 INFO  : 'con' command is executed.
+12:04:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:04:38 INFO  : Disconnected from the channel tcfchan#4.
+12:12:39 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+12:12:47 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+12:12:47 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+12:12:47 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+12:12:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:12:54 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+12:12:54 INFO  : 'jtag frequency' command is executed.
+12:12:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+12:12:55 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+12:12:55 INFO  : Context for processor 'microblaze_0' is selected.
+12:12:55 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+12:12:55 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:12:55 INFO  : Context for processor 'microblaze_0' is selected.
+12:12:55 INFO  : System reset is completed.
+12:12:58 INFO  : 'after 3000' command is executed.
+12:12:58 INFO  : Context for processor 'microblaze_0' is selected.
+12:12:58 INFO  : The application 'C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+12:12:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+12:12:58 INFO  : Context for processor 'microblaze_0' is selected.
+12:12:58 INFO  : 'con' command is executed.
+12:12:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:12:58 INFO  : Disconnected from the channel tcfchan#6.
+12:20:19 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+12:20:27 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+12:20:27 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/dant0/Desktop/final_minesweeper_1/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+12:20:27 INFO  : Checking for BSP changes to sync application flags for project 'MinesweeperPRAY'...
+12:20:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:20:34 INFO  : Jtag cable 'RealDigital Boo 8874292301A4A' is selected.
+12:20:34 INFO  : 'jtag frequency' command is executed.
+12:20:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+12:20:35 INFO  : Device configured successfully with "C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit"
+12:20:35 INFO  : Context for processor 'microblaze_0' is selected.
+12:20:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+12:20:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:20:35 INFO  : Context for processor 'microblaze_0' is selected.
+12:20:35 INFO  : System reset is completed.
+12:20:38 INFO  : 'after 3000' command is executed.
+12:20:38 INFO  : Context for processor 'microblaze_0' is selected.
+12:20:38 INFO  : The application 'C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf' is downloaded to processor 'microblaze_0'.
+12:20:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292301A4A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/MinesweeperPRAY/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/dant0/Desktop/minesweeper_pray/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/dant0/Desktop/lab_7_2/minesweeper_pray/MinesweeperPRAY/Debug/MinesweeperPRAY.elf
+----------------End of Script----------------
+
+12:20:38 INFO  : Context for processor 'microblaze_0' is selected.
+12:20:38 INFO  : 'con' command is executed.
+12:20:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:20:38 INFO  : Disconnected from the channel tcfchan#8.

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Dec 13 03:26:53 2024
+# Process ID: 7776
+# Current directory: C:/Users/dant0/Desktop/lab6/lab6_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34084 C:\Users\dant0\Desktop\lab6\lab6_1\lab6_1.xpr
+# Log file: C:/Users/dant0/Desktop/lab6/lab6_1/vivado.log
+# Journal file: C:/Users/dant0/Desktop/lab6/lab6_1\vivado.jou
+# Running On: DESKTOP-3OBC3CP, OS: Windows, CPU Frequency: 3610 MHz, CPU Physical cores: 12, Host memory: 34120 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dant0/Desktop/lab6/lab6_1/lab6_1.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run sprite_rom_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+export_ip_user_files -of_objects  [get_files {{c:/Users/dant0/font rom generator/sprite_data.coe}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/dant0/font rom generator/sprite_data.coe}}

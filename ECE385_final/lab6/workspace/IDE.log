@@ -1,0 +1,53 @@
+20:14:28 DEBUG : Logs will be stored at 'D:/Desktop/lab6/workspace/IDE.log'.
+20:14:30 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Desktop\lab6\workspace\temp_xsdb_launch_script.tcl
+20:14:30 INFO  : Platform repository initialization has completed.
+20:14:30 INFO  : Registering command handlers for Vitis TCF services
+20:14:32 INFO  : XSCT server has started successfully.
+20:14:32 INFO  : Successfully done setting XSCT server connection channel  
+20:14:32 INFO  : plnx-install-location is set to ''
+20:14:32 INFO  : Successfully done setting workspace for the tool. 
+20:14:32 INFO  : Successfully done query RDI_DATADIR 
+20:15:23 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+20:15:24 INFO  : Result from executing command 'getPlatforms': 
+20:15:24 WARN  : An unexpected exception occurred in the module 'platform project logging'
+20:15:24 INFO  : Platform 'mb_usb_hdmi_top' is added to custom repositories.
+20:15:25 INFO  : Platform 'mb_usb_hdmi_top' is added to custom repositories.
+20:16:42 INFO  : Result from executing command 'removePlatformRepo': 
+20:16:45 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+20:16:45 INFO  : Result from executing command 'getPlatforms': 
+20:16:46 INFO  : Checking for BSP changes to sync application flags for project 'lab6_test'...
+20:17:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:17:37 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+20:17:37 INFO  : 'jtag frequency' command is executed.
+20:17:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+20:17:38 INFO  : Device configured successfully with "D:/Desktop/lab6/workspace/lab6_test/_ide/bitstream/mb_usb_hdmi_top.bit"
+20:17:38 INFO  : Context for processor 'microblaze_0' is selected.
+20:17:38 INFO  : Hardware design and registers information is loaded from 'D:/Desktop/lab6/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+20:17:39 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:17:39 INFO  : Context for processor 'microblaze_0' is selected.
+20:17:39 INFO  : System reset is completed.
+20:17:42 INFO  : 'after 3000' command is executed.
+20:17:42 INFO  : Context for processor 'microblaze_0' is selected.
+20:17:42 INFO  : The application 'D:/Desktop/lab6/workspace/lab6_test/Debug/lab6_test.elf' is downloaded to processor 'microblaze_0'.
+20:17:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/Desktop/lab6/workspace/lab6_test/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/Desktop/lab6/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Desktop/lab6/workspace/lab6_test/Debug/lab6_test.elf
+----------------End of Script----------------
+
+20:17:42 INFO  : Context for processor 'microblaze_0' is selected.
+20:17:42 INFO  : 'con' command is executed.
+20:17:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:17:42 INFO  : Disconnected from the channel tcfchan#3.

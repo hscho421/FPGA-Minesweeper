@@ -1,0 +1,2 @@
+title_rom.v,verilog,xil_defaultlib,../../../../lab6_1.gen/sources_1/ip/title_rom/sim/title_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

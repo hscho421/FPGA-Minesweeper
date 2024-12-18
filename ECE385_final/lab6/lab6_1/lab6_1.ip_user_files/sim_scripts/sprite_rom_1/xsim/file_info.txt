@@ -1,0 +1,2 @@
+sprite_rom.v,verilog,xil_defaultlib,../../../../lab6_1.gen/sources_1/ip/sprite_rom_1/sim/sprite_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
