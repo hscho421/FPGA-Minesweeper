@@ -31,8 +31,15 @@ The game includes a user-friendly interface, mine detection logic, and an intera
 - **Optimized Hardware Utilization**: Designed to minimize resource usage on FPGA boards.
 
 ## Files
-This repository is organized into the following main modules:
+This repository contains the following file structure:
 
+- **`font rom generator/`**: Contains the Python scripts and resources used to generate ROM files for the sprites. These scripts map the spritesheet into individual tile images and convert them into COE files for Vivado ROM IP integration.
+- **`Minesweeper/`**: Includes all SystemVerilog source files for the Minesweeper game logic, including `mb_intro_top.sv`, `color_mapper.sv`, `minesweeper.sv`, `score_controller.sv`, and `sprite_controller.sv`.
+- **`report/`**: Contains the project report detailing the design, implementation, and testing of the Minesweeper game.
+- **`workspace/`**: A working directory used for compiling via Vitis, for Keyboard implementation in C.
+- **`readme.md`**: This documentation file, which provides an overview of the project and instructions for setup, running, and deployment.
+
+Overview of main `.sv` modules:
 1. **`mb_intro_top.sv`**: The top-level module that orchestrates the overall game logic and interfaces with the hardware.
 2. **`color_mapper.sv`**: A utility module for mapping grid states to colors for display purposes.
 3. **`minesweeper.sv`**: Contains the core game logic, including mine placement, tile updates, and grid validation.
@@ -42,6 +49,7 @@ This repository is organized into the following main modules:
 ## How to Run
 ### Requirements
 - SystemVerilog simulation tool (e.g., ModelSim, Vivado, or Quartus Prime).
+- Vitis IDE: Required for implementing keyboard functionality using C and integrating it with the FPGA system. This allows for efficient handling of keyboard inputs in the game.
 - FPGA development board (optional, for hardware testing).
 
 ### Steps
